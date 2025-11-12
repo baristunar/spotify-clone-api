@@ -1,10 +1,10 @@
 {
   "name": "spotify-clone-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch server.js"
+    "start": "node src/server.js",
+    "start:watch": "node --watch src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,10 @@
     "url": "https://github.com/baristunar/spotify-clone-api/issues"
   },
   "homepage": "https://github.com/baristunar/spotify-clone-api#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3"
+  }
 }
